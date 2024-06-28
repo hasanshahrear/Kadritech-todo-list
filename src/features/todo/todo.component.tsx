@@ -57,7 +57,7 @@ export function Todo() {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="flex gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         <TodoCol
           title="New"
           moveTask={moveTask}
