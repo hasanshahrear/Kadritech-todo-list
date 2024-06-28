@@ -49,7 +49,7 @@ export function TodoItem({ task, moveTask }: TTodoItemProps) {
       </ContextMenuTrigger>
 
       {task.status === "Ongoing" && (
-        <div className="flex justify-between mt-5 items-center">
+        <div className="flex flex-col  justify-between gap-4 mt-5">
           <DateTimePicker
             value={dueTimes[task.id]}
             onChange={handleDueTimeChange}
